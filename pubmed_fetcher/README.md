@@ -4,7 +4,7 @@ This project fetches research papers from PubMed based on a user-specified query
 
 ## Project Structure
 ```
-research-paper-fetcher/
+Pubmed_ApiFetcher/
 │-- pubmed_fetcher/
 │   │-- __init__.py
 │   │-- fetch.py        # Fetches research papers from PubMed API
