@@ -1,15 +1,17 @@
 [project]
 name = "pubmed-apifetcher"
 version = "0.1.0"
-description = ""
+description = "A tool to fetch and filter PubMed research papers"
 authors = [
-    {name = "RATHISHKUMAR07",email = "rathishkumar022@gmail.com"}
+    {name = "RATHISHKUMAR07", email = "rathishkumar022@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "requests",
+    "xmltodict",
+    "pandas"
 ]
-
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
