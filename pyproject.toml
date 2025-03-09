@@ -1,18 +1,20 @@
-[project]
+[tool.poetry]
 name = "pubmed-apifetcher"
 version = "0.1.0"
 description = "A tool to fetch and filter PubMed research papers"
-authors = [
-    {name = "RATHISHKUMAR07", email = "rathishkumar022@gmail.com"}
-]
+authors = ["RATHISHKUMAR07 <rathishkumar022@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "requests",
-    "xmltodict",
-    "pandas"
-]
+packages = [{ include = "pubmed_fetcher" }]
+
+[tool.poetry.dependencies]  
+python = ">=3.12"  # Moved here ✅
+requests = "*"
+xmltodict = "*"
+pandas = "*"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
